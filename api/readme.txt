@@ -1,3 +1,12 @@
+packages used:
+express,
+cors,
+express,
+pg,
+pool,
+nodemon
+
+
 I had Created a simple crud opration for our application 
 I had used nodejs(express) and postgresql as a database
 I had installed packages like cors,nodemon,pool,pg,

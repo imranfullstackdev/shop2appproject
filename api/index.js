@@ -3,11 +3,10 @@ const app = express();
 app.use(express.json());
 const port = 8000;
 const pool = require("./Model/db");
-const cors = require("cors");
-app.use(cors());
-
+const cors=require('cors')
+app.use(cors())
 // Getting all the values from database
-app.get("/", async (req, res) => {
+app.get("/api/v1/get", async (req, res) => {
   try {
     const getAll = await pool.query(`select * from shopify`);
     //res  is server related
@@ -54,7 +53,7 @@ app.put("/editUser/:id", async (req, res) => {
       req.body.productname,
       req.body.productinfo,
       req.body.price,
-      id,
+      id
     ]
   );
   res.json("User Edited");

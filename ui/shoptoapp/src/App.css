@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* For removing increament and decrement in form type number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* for navbar */
+.navbarLogo {
+  /* height: 100%; */
+  border-bottom: 1px solid black;
+  /* background-color: #4c4c4c; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* for AddProduct background  */
+#dialog {
+  width: 100%;
+  height: 100vh;
+  background-color: #4c4c4c;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* for AddProduct div */
+#dialog-content {
+  /* width: 471px; */
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* for Cart Page icon */
+.addtopageicon svg {
+  height: 50px;
+  width: 100px;
+  color: #7445ff;
+}
+
+/* For EditButton IN edit Page */
+.Editbutton {
+  background: #7445ff;
+  border: none;
+  width: 89px;
+  height: 36px;
+  border-radius: 6px;
+  color: whitesmoke;
+
+}
+
+#empdeslabel1 {
+  color:#7445ff;
+  border: 1px solid #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, .2) !important;
+  font-weight: 600;
+  width: 274px;
+  margin-left: auto;
+  margin-right: auto;
 }
